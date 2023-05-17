@@ -8,3 +8,4 @@ class Crossbow:
 
 class Staff:
     damage = 700
+# Changes test

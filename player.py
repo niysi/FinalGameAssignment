@@ -10,6 +10,7 @@ class Player:
     agility = 1  # demo
     faith = 1  # demo
     gold = 0  # demo
+# Changes test
 
 
 class Health_bar:

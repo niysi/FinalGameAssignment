@@ -10,7 +10,7 @@ import time
 
 
 def clear_console():
-    """ Detects the operating system and clears the console """
+    # """ Detects the operating system and clears the console """
     if platform.system() == 'Linux':
         os.system('clear')
     elif platform.system() == 'Windows':
@@ -98,8 +98,7 @@ def Menu_Fight(p):
             print(story_telling[i])
             break
 
-# def Menu_Statistics(p):
-# Changes test
+# def Menu_Statistics(p)
 
 
 Menu(Player)

@@ -15,7 +15,7 @@ class Vampire_LordTheLastboss:
     hp = randint(430, 600)
     dmg = randint(90, 150)
 
-# We have to make random generator for mobes we will have
+# We have to make some kind of list for mobes we have.
 
 
 class Fight1_stats:
