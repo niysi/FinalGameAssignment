@@ -4,17 +4,15 @@ from enemies import Fight1_stats, Fight2_stats, Fight3_stats, Allfights
 from storytelling import story_telling
 import os
 import platform
-import random
-import time
-# Clear console to make our game start pretty
+# Clear console to make our game prettier
 
 
 def clear_console():
     # """ Detects the operating system and clears the console """
-    if platform.system() == 'Linux':
-        os.system('clear')
-    elif platform.system() == 'Windows':
-        os.system('cls')
+    if platform.system() == "Linux":
+        os.system("clear")
+    elif platform.system() == "Windows":
+        os.system("cls")
 
 
 print(story_telling[0])
