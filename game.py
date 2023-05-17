@@ -95,6 +95,7 @@ def Menu_Fight(p):
             break
 
 # def Menu_Statistics(p):
+# Changes test
 
 
 Menu(Player)
