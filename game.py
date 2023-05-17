@@ -35,6 +35,7 @@ def Menu(p):
             if n == "1":
                 Menu_Fight(p)
             if n == "2":
+                # Hasn't finished yet.
                 Menu_Statistics(p)
             else:
                 print("Will you choose?")
@@ -80,18 +81,21 @@ def Menu_Fight(p):
                     print(f"You healed {Player.hp}")
 
         if Player.hp < 0:
-            print("You Lost")
+            print("Here is end of your story traveller...")
             break
         if Fight1_stats.hp and j == 1:
             i = i + 1
+            print(story_telling[i])
             j = j + 1
             break
         if Fight2_stats.hp and j == 2:
             i = i + 1
+            print(story_telling[i])
             j = j + 1
             break
         if Fight3_stats.hp and j == 3:
             i = i + 1
+            print(story_telling[i])
             break
 
 # def Menu_Statistics(p):
