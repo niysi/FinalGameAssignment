@@ -1,5 +1,5 @@
 from random import randint
-from enemies import i = 1
+from enemies import j
 from player import Player, Health_bar
 from enemies import Fight1_stats, Fight2_stats, Fight3_stats, Allfights
 from storytelling import story_telling
