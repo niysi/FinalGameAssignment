@@ -1,6 +1,6 @@
 from random import randint
 
-i = 0
+j = 0
 
 class Vampire_Thief:
     hp = randint(30, 50)
