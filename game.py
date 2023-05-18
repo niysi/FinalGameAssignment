@@ -1,4 +1,5 @@
 from random import randint
+from enemies import i = 1
 from player import Player, Health_bar
 from enemies import Fight1_stats, Fight2_stats, Fight3_stats, Allfights
 from storytelling import story_telling
@@ -20,8 +21,6 @@ print(story_telling[0])
 
 
 def Menu(p):
-    i = 1
-    j = 0
     while True:
         print("1- Continue")
         print("2- Check Statistics")
