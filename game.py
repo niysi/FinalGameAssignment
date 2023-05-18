@@ -80,7 +80,6 @@ def Menu_Fight(p):
         if Player.hp < 0:
             print("Here is end of your story traveller...")
             break
-        j = 0
         if Fight1_stats.hp < 0 and j == 0:
             i = 2
             print(story_telling[i])
