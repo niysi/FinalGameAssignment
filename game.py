@@ -1,5 +1,4 @@
 from random import randint
-from enemies import j
 from player import Player, Health_bar
 from enemies import Fight1_stats, Fight2_stats, Fight3_stats, Allfights
 from storytelling import story_telling
@@ -41,6 +40,8 @@ def Menu(p):
 
 
 def Menu_Fight(p):
+    j = 0
+    i = 1
     while Player.base_hp > 0:
         print(Health_bar.healthbar)
         print(Player.base_hp, "\t", Player.base_dmg)
