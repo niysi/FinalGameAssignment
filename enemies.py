@@ -1,5 +1,6 @@
 from random import randint
 
+i = 0
 
 class Vampire_Thief:
     hp = randint(30, 50)
@@ -21,7 +22,7 @@ class Vampire_LordTheLastboss:
 class Fight1_stats:
     hp = 0
     dmg = 0
-    for i in range(0, 3):
+    for x in range(0, 3):
         hp += Vampire_Thief.hp
         dmg += Vampire_Thief.dmg
 
@@ -29,7 +30,7 @@ class Fight1_stats:
 class Fight2_stats:
     hp = 0
     dmg = 0
-    for i in range(0, 2):
+    for x in range(0, 2):
         hp += Vampire_Thief.hp
         dmg += Vampire_Thief.dmg
 
@@ -37,7 +38,7 @@ class Fight2_stats:
 class Fight3_stats:
     hp = 0
     dmg = 0
-    for i in range(0, 2):
+    for x in range(0, 2):
         hp += Vampire_Thief.hp
         dmg += Vampire_Thief.dmg
     hp += Vampire_LordTheLastboss.hp
