@@ -16,12 +16,12 @@ def clear_console():
 
 
 print(story_telling[0])
-i = 1
-j = 0
+
 
 
 def Menu(p):
-
+    i = 1
+    j = 0
     while True:
         print("1- Continue")
         print("2- Check Statistics")
@@ -81,17 +81,17 @@ def Menu_Fight(p):
         if Player.hp < 0:
             print("Here is end of your story traveller...")
             break
-        if Fight1_stats.hp and j == 1:
+        if Fight1_stats.hp < 0 and j == 1:
             i = i + 1
             print(story_telling[i])
             j = j + 1
             break
-        if Fight2_stats.hp and j == 2:
+        if Fight2_stats.hp < 0 and j == 2:
             i = i + 1
             print(story_telling[i])
             j = j + 1
             break
-        if Fight3_stats.hp and j == 3:
+        if Fight3_stats.hp < 0 and j == 3:
             i = i + 1
             print(story_telling[i])
             break
