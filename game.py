@@ -46,7 +46,7 @@ def Menu_Fight(p):
     while True > 0:
         print(Health_bar.healthbar)
         print(Player.base_hp, "\t", Player.base_dmg)
-        print("---------------------")
+        print("------")
         print("1 - Strike the enemy")
         # Not realised even close/ should be 2 types of healing
         print("2 - Heal")
@@ -59,14 +59,14 @@ def Menu_Fight(p):
                 print(f"You striked the enemy, he has {Fight1_stats.hp}")
                 Player.base_hp -= Fight1_stats.dmg
                 print(f"You was striked by enemy, your {Player.base_hp}")
-            print("----------------------------------")
+            print("----")
             if Allfights[j] == Fight2_stats:
                 Player.base_dmg += randint(20, 30)
                 Fight2_stats.hp = Fight2_stats.hp - Player.base_dmg
                 print(f"You striked the enemy, he has {Fight2_stats.hp}")
                 Player.base_hp -= Fight2_stats.dmg
                 print(f"You was striked by enemy, your {Player.base_hp}")
-            print("----------------------------------")
+            print("----")
 
             if Allfights[j] == Fight3_stats:
                 Player.base_dmg += randint(100, 200)
@@ -74,7 +74,7 @@ def Menu_Fight(p):
                 print(f"You striked the enemy, he has {Fight3_stats.hp}")
                 Player.base_hp -= Fight1_stats.dmg
                 print(f"You was striked by enemy, your {Player.base_hp}")
-            print("----------------------------------")
+            print("----")
 
         if n == "2":
             Player.base_hp += randint(100, 200)
