@@ -42,7 +42,7 @@ def Menu(p):
 
 def Menu_Fight(p):
     j = 0
-    i = 1
+
     while True > 0:
         print(Health_bar.healthbar)
         print(Player.base_hp, "\t", Player.base_dmg)
@@ -67,6 +67,7 @@ def Menu_Fight(p):
             print("----------------------------------")
 
             if Allfights[j] == Fight3_stats:
+                Player.base_dmg += randint(100, 200)
                 Fight3_stats.hp = Fight3_stats.hp - Player.base_dmg
                 print(f"You striked the enemy, he has {Fight3_stats.hp}")
                 Player.base_hp -= Fight1_stats.dmg
@@ -84,20 +85,18 @@ def Menu_Fight(p):
             break
         if Fight1_stats.hp < 0 and j == 0:
 
-            print(Story_telling[2])
-            print(Story_telling[3])
+            print(Story_telling[2, 3, 4, 5])
             j = 1
 
         if Fight2_stats.hp < 0 and j == 1:
 
-            print(Story_telling[4])
-            print(Story_telling[5])
+            print(Story_telling[6, 7, 8, 9])
+
             j = 2
 
         if Fight3_stats.hp < 0 and j == 2:
-            i = 4
-            print(Story_telling[6])
-            print(Story_telling[8])
+
+            print(Story_telling[10, 11, 12, 13])
 
 
 def Menu_Statistics(p):
