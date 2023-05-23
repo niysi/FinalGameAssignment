@@ -85,18 +85,27 @@ def Menu_Fight(p):
             break
         if Fight1_stats.hp < 0 and j == 0:
 
-            print(Story_telling[2, 3, 4, 5])
+            print(Story_telling[2])
+            print(Story_telling[3])
+            print(Story_telling[4])
+            print(Story_telling[5])
             j = 1
 
         if Fight2_stats.hp < 0 and j == 1:
 
-            print(Story_telling[6, 7, 8, 9])
+            print(Story_telling[6])
+            print(Story_telling[7])
+            print(Story_telling[8])
+            print(Story_telling[9])
 
             j = 2
 
         if Fight3_stats.hp < 0 and j == 2:
 
-            print(Story_telling[10, 11, 12, 13])
+            print(Story_telling[10])
+            print(Story_telling[11])
+            print(Story_telling[12])
+            print(Story_telling[13])
 
 
 def Menu_Statistics(p):
