@@ -73,10 +73,10 @@ def Menu_Fight(p):
             print("----------------------------------")
 
             if n == "2":
-                Player.base_hp += randint(10, 20)
+                Player.base_hp += randint(100, 200)
                 if Player.base_hp > 100:
                     Player.base_hp = 100
-                    print(f"You healed {Player.base_hp}")
+                print(f"You healed {Player.base_hp}")
 
         if Player.base_hp < 0:
             print("Here is end of your story traveller...")
