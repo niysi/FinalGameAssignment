@@ -29,10 +29,10 @@ def Menu(p):
         try:
 
             if n == "1":
-                Menu_Fight(p)
+                Menu_Fight(Player)
             if n == "2":
                 # Hasn't finished yet.
-                Menu_Statistics()
+                Menu_Statistics(Player)
             else:
                 print("Will you choose?")
         except (NameError, SyntaxError):
@@ -42,7 +42,7 @@ def Menu(p):
 def Menu_Fight(p):
     j = 0
     i = 1
-    while Player.base_hp > 0:
+    while True > 0:
         print(Health_bar.healthbar)
         print(Player.base_hp, "\t", Player.base_dmg)
         print("---------------------")
@@ -72,11 +72,11 @@ def Menu_Fight(p):
                 print(f"You was striked by enemy, your {Player.base_hp}")
             print("----------------------------------")
 
-            if n == "2":
-                Player.base_hp += randint(100, 200)
-                if Player.base_hp > 100:
-                    Player.base_hp = 100
-                print(f"You healed {Player.base_hp}")
+        if n == "2":
+            Player.base_hp += randint(100, 200)
+            if Player.base_hp > 100:
+                Player.base_hp = 100
+            print(f"You healed {Player.base_hp}")
 
         if Player.base_hp < 0:
             print("Here is end of your story traveller...")
