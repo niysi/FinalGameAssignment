@@ -41,7 +41,8 @@ def Menu(p):
 
 
 def Menu_Fight(p):
-
+    j = 0
+    i = 1
     while True > 0:
         print(Health_bar.healthbar)
         print(Player.base_hp, "\t", Player.base_dmg)
@@ -85,16 +86,18 @@ def Menu_Fight(p):
 
             print(Story_telling[2])
             print(Story_telling[3])
+            j = 1
 
         if Fight2_stats.hp < 0 and j == 1:
 
             print(Story_telling[4])
             print(Story_telling[5])
+            j = 2
 
         if Fight3_stats.hp < 0 and j == 2:
-
+            i = 4
             print(Story_telling[6])
-            print(Story_telling[7])
+            print(Story_telling[8])
 
 
 def Menu_Statistics(p):
