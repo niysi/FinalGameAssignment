@@ -21,7 +21,7 @@ print(Story_telling[1])
 
 def Menu(p):
     while True:
-        if Player.base_hp < 0:
+        if Player.base_hp < 0 and Fight3_stats.hp < 0:
             break
         print("1- Continue")
         print("2- Check Statistics")
@@ -106,6 +106,7 @@ def Menu_Fight(p):
             print(Story_telling[11])
             print(Story_telling[12])
             print(Story_telling[13])
+            break
 
 
 def Menu_Statistics(p):
