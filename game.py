@@ -8,7 +8,7 @@ from storytelling import Story_telling
 
 
 def clear_console():
-    # """ Detects the operating system and clears the console """
+    # Detects the operating system and clears the console
     if platform.system() == "Linux":
         os.system("clear")
     elif platform.system() == "Windows":
