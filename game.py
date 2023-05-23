@@ -54,12 +54,14 @@ def Menu_Fight(p):
 
         if n == "1":
             if Allfights[j] == Fight1_stats:
+                Player.base_dmg += randint(5, 10)
                 Fight1_stats.hp = Fight1_stats.hp - Player.base_dmg
                 print(f"You striked the enemy, he has {Fight1_stats.hp}")
                 Player.base_hp -= Fight1_stats.dmg
                 print(f"You was striked by enemy, your {Player.base_hp}")
             print("----------------------------------")
             if Allfights[j] == Fight2_stats:
+                Player.base_dmg += randint(20, 30)
                 Fight2_stats.hp = Fight2_stats.hp - Player.base_dmg
                 print(f"You striked the enemy, he has {Fight2_stats.hp}")
                 Player.base_hp -= Fight2_stats.dmg
