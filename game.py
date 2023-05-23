@@ -15,10 +15,9 @@ def clear_console():
         os.system("cls")
 
 
-print(story_telling[0])
+# print(story_telling[0])
 
 
-# asda
 def Menu(p):
     while True:
         print("1- Continue")
@@ -31,7 +30,6 @@ def Menu(p):
             if n == "1":
                 Menu_Fight(Player)
             if n == "2":
-                # Hasn't finished yet.
                 Menu_Statistics(Player)
             else:
                 print("Will you choose?")
@@ -97,8 +95,8 @@ def Menu_Fight(p):
 
 
 def Menu_Statistics():
-    print("This is not working")
+    print(Player.base_hp)
+    print(Player.base_dmg)
 
 
-# This is not working
 Menu(Player)
