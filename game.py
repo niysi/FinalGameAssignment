@@ -3,7 +3,7 @@ import os
 import platform
 from player import Player, Health_bar
 from enemies import Fight1_stats, Fight2_stats, Fight3_stats, Allfights
-from storytelling import story_telling
+from storytelling import Story_telling
 # Clear console to make our game prettier
 
 
@@ -15,11 +15,14 @@ def clear_console():
         os.system("cls")
 
 
-# print(story_telling[0])
+print(Story_telling[0])
+print(Story_telling[1])
 
 
 def Menu(p):
     while True:
+        if Player.base_hp < 0:
+            break
         print("1- Continue")
         print("2- Check Statistics")
 
@@ -38,8 +41,7 @@ def Menu(p):
 
 
 def Menu_Fight(p):
-    j = 0
-    i = 1
+
     while True > 0:
         print(Health_bar.healthbar)
         print(Player.base_hp, "\t", Player.base_dmg)
@@ -80,21 +82,22 @@ def Menu_Fight(p):
             print("Here is end of your story traveller...")
             break
         if Fight1_stats.hp < 0 and j == 0:
-            i = 2
-            # print(story_telling[i])
-            j = 1
+
+            print(Story_telling[2])
+            print(Story_telling[3])
 
         if Fight2_stats.hp < 0 and j == 1:
-            i = 3
-            # print(story_telling[i])
-            j = 2
+
+            print(Story_telling[4])
+            print(Story_telling[5])
 
         if Fight3_stats.hp < 0 and j == 2:
-            i = 4
-            # print(story_telling[i])
+
+            print(Story_telling[6])
+            print(Story_telling[7])
 
 
-def Menu_Statistics():
+def Menu_Statistics(p):
     print(Player.base_hp)
     print(Player.base_dmg)
 
